@@ -126,27 +126,36 @@ nav a:hover {
 
 .card {
     width: 220px;
-    padding: 20px;
     border-radius: 20px;
     background: #ffffffcc;
     backdrop-filter: blur(5px);
-    transition: 0.3s;
     box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
     text-align: center;
+    overflow: hidden;
 }
 
-.card:hover {
-    transform: translateY(-10px) scale(1.05);
+.card img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 180px;
+    object-fit: cover;
 }
 
 .card h3 {
-    margin-bottom: 10px;
+    margin: 15px 0 5px 0;
     color: #ff4d6d;
 }
 
 .card p {
+    margin-bottom: 15px;
     color: #555;
     font-size: 14px;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
 }
 
 /* ABOUT */
@@ -235,38 +244,67 @@ footer {
     <h2>Our Flavor Menu</h2>
 
     <div class="products">
+
         <div class="card">
-            <h3>Berry Explosion</h3>
+            <img src="https://images.unsplash.com/photo-1611080620566-8935c38e6b0b?auto=format&fit=crop&w=800&q=80" alt="Berry Fit">
+            <h3>Berry Fit</h3>
             <p>Strawberry, Blueberry, Raspberry</p>
         </div>
+
         <div class="card">
-            <h3>Choco Delight</h3>
-            <p>Dark Chocolate, Almond, Caramel Swirl</p>
+            <img src="https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=800&q=80" alt="Choco Protein">
+            <h3>Choco Protein</h3>
+            <p>Chocolate, Almond Milk, Protein</p>
         </div>
+
         <div class="card">
-            <h3>Mango Mania</h3>
+            <img src="https://images.unsplash.com/photo-1624165440070-41cd49798d70?auto=format&fit=crop&w=800&q=80" alt="Tropical Fresh">
+            <h3>Tropical Fresh</h3>
             <p>Mango, Pineapple, Coconut</p>
         </div>
+
         <div class="card">
+            <img src="https://images.unsplash.com/photo-1611080620648-02a2f6b1c15d?auto=format&fit=crop&w=800&q=80" alt="Green Detox">
             <h3>Green Detox</h3>
             <p>Avocado, Lime, Honey</p>
         </div>
+
         <div class="card">
-            <h3>Nutty Banana</h3>
-            <p>Banana, Peanut Butter, Oats</p>
+            <img src="https://images.unsplash.com/photo-1611080620585-8ed3f6f4f0e8?auto=format&fit=crop&w=800&q=80" alt="Caramel Crunch">
+            <h3>Caramel Crunch</h3>
+            <p>Caramel, Nuts, Cream</p>
         </div>
+
         <div class="card">
-            <h3>Cookie Crunch</h3>
-            <p>Cookies, Cream, Chocolate Chips</p>
+            <img src="https://images.unsplash.com/photo-1622495893073-64f94ff3c267?auto=format&fit=crop&w=800&q=80" alt="Mint Chip">
+            <h3>Mint Chip</h3>
+            <p>Mint, Chocolate Chips</p>
         </div>
+
         <div class="card">
+            <img src="https://images.unsplash.com/photo-1611080620527-6d2ee1f38f14?auto=format&fit=crop&w=800&q=80" alt="Cookies & Cream">
+            <h3>Cookies & Cream</h3>
+            <p>Cookies, Cream, Chocolate</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1622495893070-d19214d4c16d?auto=format&fit=crop&w=800&q=80" alt="Peach Paradise">
+            <h3>Peach Paradise</h3>
+            <p>Peach, Vanilla, Cream</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1611080620510-94f5a3b5f4b8?auto=format&fit=crop&w=800&q=80" alt="Tropical Twist">
             <h3>Tropical Twist</h3>
             <p>Pineapple, Passionfruit, Mango</p>
         </div>
+
         <div class="card">
+            <img src="https://images.unsplash.com/photo-1624165440070-4b5c19b6b0f1?auto=format&fit=crop&w=800&q=80" alt="Strawberry Cheesecake">
             <h3>Strawberry Cheesecake</h3>
             <p>Strawberry, Cream Cheese, Graham Cracker</p>
         </div>
+
     </div>
 </section>
 
