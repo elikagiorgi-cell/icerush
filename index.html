@@ -1,327 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IceRush - Fresh & Fun</title>
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', Arial, sans-serif;
-}
-
-body {
-    background: #fff8f0;
-    color: #333;
-}
-
-/* HEADER */
-header {
-    background: linear-gradient(90deg, #ff5a5f, #ffb347);
-    color: white;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-header h1 {
-    font-size: 28px;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-header h1:hover {
-    transform: scale(1.1);
-}
-
-nav a {
-    color: white;
-    margin-left: 25px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #333;
-}
-
-/* HERO */
-.hero {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #ffe6f0, #d4fff7);
-    text-align: center;
-    position: relative;
-}
-
-.hero h2 {
-    font-size: 52px;
-    margin-bottom: 15px;
-    color: #ff4d6d;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
-}
-
-.hero p {
-    font-size: 20px;
-    margin-bottom: 30px;
-    color: #555;
-}
-
-/* BUTTONS */
-.buttons {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.btn {
-    padding: 15px 30px;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-.glovo { background: #ffd600; }
-.wolt { background: #00c2e8; color: white; }
-.bolt { background: #2ecc71; color: white; }
-
-.btn:hover {
-    transform: scale(1.1);
-    opacity: 0.9;
-}
-
-/* MENU */
-.menu {
-    padding: 60px 20px;
-    text-align: center;
-    background: #fff0f5;
-}
-
-.menu h2 {
-    margin-bottom: 40px;
-    font-size: 36px;
-    color: #ff4d6d;
-}
-
-/* PRODUCTS GRID */
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-    justify-items: center;
-}
-
-.card {
-    width: 220px;
-    border-radius: 20px;
-    background: #ffffffcc;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
-    text-align: center;
-    overflow: hidden;
-}
-
-.card img {
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    height: 180px;
-    object-fit: cover;
-}
-
-.card h3 {
-    margin: 15px 0 5px 0;
-    color: #ff4d6d;
-}
-
-.card p {
-    margin-bottom: 15px;
-    color: #555;
-    font-size: 14px;
-}
-
-.card:hover {
-    transform: translateY(-10px) scale(1.05);
-}
-
-/* ABOUT */
-.about {
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #fff8e1, #ffe0f0);
-    text-align: center;
-}
-
-.about h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-    color: #ff4d6d;
-}
-
-.about p {
-    max-width: 700px;
-    margin: auto;
-    font-size: 18px;
-    color: #555;
-}
-
-/* CONTACT */
-.contact {
-    padding: 50px 20px;
-    text-align: center;
-    background: linear-gradient(135deg, #d4fff7, #ffe6f0);
-}
-
-.contact h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-    color: #ff4d6d;
-}
-
-.contact p {
-    font-size: 18px;
-    margin: 5px 0;
-}
-
-/* FOOTER */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .hero h2 {
-        font-size: 36px;
-    }
-    .menu h2, .about h2, .contact h2 {
-        font-size: 28px;
-    }
-}
-</style>
-</head>
-
-<body>
-
-<header>
-    <h1>🍦 IceRush</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section class="hero">
-    <h2>Fresh Ice Cream, Fun Flavors!</h2>
-    <p>Order your favorite ice creams with just one click</p>
-
-    <div class="buttons">
-        <button class="btn glovo">Glovo</button>
-        <button class="btn wolt">Wolt</button>
-        <button class="btn bolt">Bolt Food</button>
-    </div>
-</section>
-
 <section id="menu" class="menu">
     <h2>Our Flavor Menu</h2>
-
     <div class="products">
-
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1611080620566-8935c38e6b0b?auto=format&fit=crop&w=800&q=80" alt="Berry Fit">
+            <img src="https://source.unsplash.com/220x180/?strawberry,ice-cream" alt="Berry Fit">
             <h3>Berry Fit</h3>
             <p>Strawberry, Blueberry, Raspberry</p>
         </div>
-
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=800&q=80" alt="Choco Protein">
+            <img src="https://source.unsplash.com/220x180/?chocolate,ice-cream" alt="Choco Protein">
             <h3>Choco Protein</h3>
             <p>Chocolate, Almond Milk, Protein</p>
         </div>
-
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1624165440070-41cd49798d70?auto=format&fit=crop&w=800&q=80" alt="Tropical Fresh">
+            <img src="https://source.unsplash.com/220x180/?mango,ice-cream" alt="Tropical Fresh">
             <h3>Tropical Fresh</h3>
             <p>Mango, Pineapple, Coconut</p>
         </div>
-
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1611080620648-02a2f6b1c15d?auto=format&fit=crop&w=800&q=80" alt="Green Detox">
+            <img src="https://source.unsplash.com/220x180/?avocado,ice-cream" alt="Green Detox">
             <h3>Green Detox</h3>
             <p>Avocado, Lime, Honey</p>
         </div>
-
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1611080620585-8ed3f6f4f0e8?auto=format&fit=crop&w=800&q=80" alt="Caramel Crunch">
+            <img src="https://source.unsplash.com/220x180/?caramel,ice-cream" alt="Caramel Crunch">
             <h3>Caramel Crunch</h3>
             <p>Caramel, Nuts, Cream</p>
         </div>
-
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1622495893073-64f94ff3c267?auto=format&fit=crop&w=800&q=80" alt="Mint Chip">
+            <img src="https://source.unsplash.com/220x180/?mint,ice-cream" alt="Mint Chip">
             <h3>Mint Chip</h3>
             <p>Mint, Chocolate Chips</p>
         </div>
-
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1611080620527-6d2ee1f38f14?auto=format&fit=crop&w=800&q=80" alt="Cookies & Cream">
+            <img src="https://source.unsplash.com/220x180/?cookies,ice-cream" alt="Cookies & Cream">
             <h3>Cookies & Cream</h3>
             <p>Cookies, Cream, Chocolate</p>
         </div>
-
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1622495893070-d19214d4c16d?auto=format&fit=crop&w=800&q=80" alt="Peach Paradise">
+            <img src="https://source.unsplash.com/220x180/?peach,ice-cream" alt="Peach Paradise">
             <h3>Peach Paradise</h3>
             <p>Peach, Vanilla, Cream</p>
         </div>
-
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1611080620510-94f5a3b5f4b8?auto=format&fit=crop&w=800&q=80" alt="Tropical Twist">
+            <img src="https://source.unsplash.com/220x180/?pineapple,ice-cream" alt="Tropical Twist">
             <h3>Tropical Twist</h3>
             <p>Pineapple, Passionfruit, Mango</p>
         </div>
-
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1624165440070-4b5c19b6b0f1?auto=format&fit=crop&w=800&q=80" alt="Strawberry Cheesecake">
+            <img src="https://source.unsplash.com/220x180/?cheesecake,ice-cream" alt="Strawberry Cheesecake">
             <h3>Strawberry Cheesecake</h3>
             <p>Strawberry, Cream Cheese, Graham Cracker</p>
         </div>
-
     </div>
 </section>
-
-<section id="about" class="about">
-    <h2>About IceRush</h2>
-    <p>We make fresh, healthy ice creams with natural ingredients. Fast delivery, huge variety, and flavors you will love!</p>
-</section>
-
-<section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>📞 +995 555 123 456</p>
-    <p>📍 Tbilisi, Georgia</p>
-</section>
-
-<footer>
-    <p>© 2026 IceRush | Fresh & Fun Flavors</p>
-</footer>
-
-</body>
-</html>
